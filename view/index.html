@@ -1,0 +1,18 @@
+{{ template "layout" }}
+
+{{ define "content" }}
+
+<div class="panel panel-primary data-list">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <h1>List of data</h1>
+        </div>
+        <div class="pull-right">
+            <button class="btn btn-warning">Add new</button>
+        </div>
+    </div>
+    <div class="panel-body">
+        {{.Body}}
+    </div>
+</div>
+{{ end }}
