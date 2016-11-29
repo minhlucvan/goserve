@@ -5,6 +5,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Go SDK" level="project" />
-    <orderEntry type="library" name="GOPATH &lt;goserver&gt;" level="project" />
   </component>
 </module>

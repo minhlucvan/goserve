@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{{ template "layout" }}
 
-</body>
-</html>
+{{ define "content" }}
+
+<div class="panel panel-primary data-list">
+    <div class="panel-heading">
+        <div class="panel-title">
+            <h1>Edit</h1>
+        </div>
+    </div>
+    <div class="panel-body">
+        <form action="/save/new" method="post" role="form">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" value="" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="body">Body:</label>
+                <textarea name="body" id="body" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group bottom">
+                <button class="btn btn-success">add page</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{ end }}
+
